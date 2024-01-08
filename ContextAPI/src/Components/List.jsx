@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ItemContext } from "../Store/ItemContext";
 
 const List = () => {
-  return <></>;
+  const data = useContext(ItemContext);
+  const items = data.StoreItems;
+
+  return (
+    <>
+      {items.map((val, index) => {
+        return <div key={index}> {val} </div>;
+      })}
+    </>
+  );
 };
 
 export default List;
