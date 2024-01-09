@@ -4,3 +4,9 @@
   justify-content: center;
   align-items: center;
 }
+.ItemContainer{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  margin:10px;
+}
